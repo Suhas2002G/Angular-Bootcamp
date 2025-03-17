@@ -1,0 +1,12 @@
+Github : 
+https://github.com/pitkarsa/bootcamp-angular
+
+
+
+
+
+Angular 16 : installation:
+
+1. node 18 + [cmd : node --version]
+2. npm install -g @angular/cli@16.1.0
+3. check 'ng version' to check angular version
