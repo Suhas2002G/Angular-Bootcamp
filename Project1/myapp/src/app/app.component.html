@@ -1,32 +1,137 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary mt-3 p-2 m-3 rounded-3">
+<div class="conatiner">
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">EasyyShop</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/product">Product</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/login">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/register">Register</a>
-        </li>
-        
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
+      <!-- Logo -->
+      <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+      <a class="navbar-brand" href="/">
+          Shop<span style="color: #ff6219;">Sphere</span>
+      </a>
+      
+      <!-- Hamburger Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </button>
+      
+      <!-- Navigation Items -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" routerLink="/">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="/product">Products</a>
+              </li>
+              
+          </ul>
+          
+          <!-- Search Form -->
+          <form class="search-form d-flex me-2">
+              <i class="fas fa-search search-icon"></i>
+              <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          
+          <!-- CTA Buttons and Toggle -->
+          <div class="nav-actions d-flex align-items-center">
+              <a routerLink="/login" class="btn btn-outline-primary btn-nav me-2">Login</a>
+              <a routerLink="/register" class="btn btn-outline-primary btn-nav me-2">Register</a>
+              <!-- <a href="#" class="btn btn-primary btn-nav">Sign Up</a> -->
+              <!-- <div class="dark-mode-toggle ms-3">
+                  <i class="fas fa-moon"></i>
+              </div> -->
+          </div>
+      </div>
   </div>
 </nav>
 
 
-<router-outlet></router-outlet>
+
+    <router-outlet></router-outlet>
+</div>
+
+
+
+<!-- footer  -->
+
+<footer >
+  <div class="container">
+      <div class="row">
+          <!-- Company Information -->
+          <div class="col-lg-3 col-md-6 footer-col">
+            <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+              <div class="footer-brand">Shop<span style="color: #ff6219;">Sphere</span></div>
+              <p class="footer-about">We are a passionate team dedicated to delivering exceptional products and services to our clients worldwide.</p>
+              <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+          
+          <!-- Quick Links -->
+          <div class="col-lg-3 col-md-6 footer-col">
+              <h4 class="footer-heading">Quick Links</h4>
+              <ul class="footer-links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+          </div>
+          
+          <!-- Contact Information -->
+          <div class="col-lg-3 col-md-6 footer-col">
+              <h4 class="footer-heading">Contact Us</h4>
+              <div class="contact-info">
+                  <div class="contact-item">
+                      <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                      <span>123 Business Street, New York, NY 10001</span>
+                  </div>
+                  <div class="contact-item">
+                      <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                      <span>+1 (555) 123-4567</span>
+                  </div>
+                  <div class="contact-item">
+                      <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                      <span>suhas8838</span>
+                  </div>
+                  <div class="contact-item">
+                      <span class="contact-icon"><i class="fas fa-clock"></i></span>
+                      <span>Monday-Friday: 9am to 5pm</span>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Newsletter -->
+          <div class="col-lg-3 col-md-6 footer-col">
+              <h4 class="footer-heading">Newsletter</h4>
+              <p class="footer-about">Subscribe to our newsletter for updates, news, and special offers.</p>
+              <form class="newsletter-form">
+                  <input type="email" placeholder="Your Email Address" class="newsletter-input" required>
+                  <button type="submit" class="newsletter-btn">
+                      <i class="fas fa-paper-plane"></i>
+                  </button>
+              </form>
+              <p class="footer-about">We respect your privacy and will never share your information.</p>
+          </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="row footer-bottom">
+          <div class="col-md-6">
+              <p class="copyright">© <span id="current-year">2025</span> Company Name. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 footer-bottom-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Sitemap</a>
+          </div>
+      </div>
+  </div>
+</footer>

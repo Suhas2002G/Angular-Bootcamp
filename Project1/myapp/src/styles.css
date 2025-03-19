@@ -2,10 +2,8 @@
 *{
     margin: 0;
     padding: 0;
-    /* color: aliceblue; */
     
 }
-
-body{
-    background: #4d4d4d;  
+body {
+    padding-top: 90px; /* Adjust according to the navbar height */
 }
